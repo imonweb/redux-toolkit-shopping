@@ -14,10 +14,7 @@ import Col from 'react-bootstrap/Col';
 function App() {
 
   const router = createBrowserRouter(createRoutesFromElements(
-  // <Route path="/" element={<RouteLayout />}>
-  //   <Route index element={<Dashboard />}></Route>
-  //   <Route path="/cart" element={<Cart />}></Route>
-  // </Route>
+   
   <Route path="/" element={<RootLayout />}>
      <Route index element={<Dashboard />}></Route>
      <Route path="/cart" element={<Cart />}></Route>

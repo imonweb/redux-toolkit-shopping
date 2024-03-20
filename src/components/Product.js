@@ -2,8 +2,12 @@ import React from 'react'
 import {useState, useEffect} from 'react'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
+import { useDispatch } from 'react-redux'
+import {add} from '../store/cartSlice'
 
 const Product = () => {
+  const dispatch = useDispatch()
+
   const [products, getProducts] = useState([])
   useEffect(() => {
     //api 
@@ -14,7 +18,7 @@ const Product = () => {
 
   const addToCart = (product) => {
     // dispatch an add action 
-    // dispatch(add(product))
+    dispatch(add(product))
   }
 
     const cards = products.map(product => (

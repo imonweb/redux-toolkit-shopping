@@ -21,7 +21,7 @@ const Product = () => {
 
     // dispatch an action for fetchProducts
     dispatch(getProducts())
-  },[])
+  }, []);
 
   const addToCart = (product) => {
     // dispatch an add action 

@@ -6,7 +6,6 @@ import { useDispatch, useSelector } from 'react-redux'
 import {add} from '../store/cartSlice'
 import { getProducts } from '../store/productSlice'
 
- 
 const Product = () => {
   const dispatch = useDispatch()
 
@@ -21,7 +20,7 @@ const Product = () => {
 
     // dispatch an action for fetchProducts
     dispatch(getProducts())
-  }, []);
+  },[])
 
   const addToCart = (product) => {
     // dispatch an add action 

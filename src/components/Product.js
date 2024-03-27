@@ -14,9 +14,9 @@ const Product = () => {
   // const [products, getProducts] = useState([])
   useEffect(() => {
     //api 
-    // fetch('https://fakestoreapi.com/products')
-    // .then(data => data.json())
-    // .then(result => getProducts(result))
+    fetch('https://fakestoreapi.com/products')
+    .then(data => data.json())
+    .then(result => getProducts(result))
 
     // dispatch an action for fetchProducts
     dispatch(getProducts())
